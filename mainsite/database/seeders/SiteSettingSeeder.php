@@ -24,8 +24,8 @@ class SiteSettingSeeder extends Seeder
             ['name' => 'siteLogo', 'value' => '', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
             ['name' => 'siteFavIcon', 'value' => '', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
             ['name' => 'socialMedia', 'value' => '', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
-            ['name' => 'backendTheme', 'value' => 'inspinia', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
-            ['name' => 'frontendTheme', 'value' => '', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
+            ['name' => 'backendTheme', 'value' => 'hc01_back', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
+            ['name' => 'frontendTheme', 'value' => 'hc01_front', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
             ['name' => 'recaptchaStatus', 'value' => '0', 'created_at' => Carbon::now(), 'updated_at' => Carbon::now()],
         ]);
     }

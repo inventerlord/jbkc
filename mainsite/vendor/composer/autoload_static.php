@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite0de9a15da934b6997035e3b55a493c9
+class ComposerStaticInit73521a7d20234e6de35b47fd4326f4cb
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -321,8 +321,8 @@ class ComposerStaticInite0de9a15da934b6997035e3b55a493c9
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -483,6 +483,7 @@ class ComposerStaticInite0de9a15da934b6997035e3b55a493c9
         'App\\Contracts\\SettingsContract' => __DIR__ . '/../..' . '/app/Contracts/SettingsContract.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Admin\\AdminFrontEndController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/AdminFrontEndController.php',
+        'App\\Http\\Controllers\\Admin\\CourseController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/CourseController.php',
         'App\\Http\\Controllers\\Admin\\PermissionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/PermissionController.php',
         'App\\Http\\Controllers\\Admin\\RoleController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/RoleController.php',
         'App\\Http\\Controllers\\Admin\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Admin/UserController.php',
@@ -491,7 +492,12 @@ class ComposerStaticInite0de9a15da934b6997035e3b55a493c9
         'App\\Http\\Controllers\\Auth\\ForgetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
+        'App\\Http\\Controllers\\ConsultancyController' => __DIR__ . '/../..' . '/app/Http/Controllers/ConsultancyController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\CorporateController' => __DIR__ . '/../..' . '/app/Http/Controllers/CorporateController.php',
+        'App\\Http\\Controllers\\FrontEndController' => __DIR__ . '/../..' . '/app/Http/Controllers/FrontEndController.php',
+        'App\\Http\\Controllers\\ProfessionalController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfessionalController.php',
+        'App\\Http\\Controllers\\SchoolController' => __DIR__ . '/../..' . '/app/Http/Controllers/SchoolController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\AuthGate' => __DIR__ . '/../..' . '/app/Http/Middleware/AuthGate.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -504,6 +510,8 @@ class ComposerStaticInite0de9a15da934b6997035e3b55a493c9
         'App\\Http\\Middleware\\ValidateSignature' => __DIR__ . '/../..' . '/app/Http/Middleware/ValidateSignature.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Mail\\ResetPasswordMail' => __DIR__ . '/../..' . '/app/Mail/ResetPasswordMail.php',
+        'App\\Models\\Course' => __DIR__ . '/../..' . '/app/Models/Course.php',
+        'App\\Models\\CourseCategory' => __DIR__ . '/../..' . '/app/Models/CourseCategory.php',
         'App\\Models\\Permission' => __DIR__ . '/../..' . '/app/Models/Permission.php',
         'App\\Models\\Role' => __DIR__ . '/../..' . '/app/Models/Role.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
@@ -4593,9 +4601,9 @@ class ComposerStaticInite0de9a15da934b6997035e3b55a493c9
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite0de9a15da934b6997035e3b55a493c9::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite0de9a15da934b6997035e3b55a493c9::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInite0de9a15da934b6997035e3b55a493c9::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit73521a7d20234e6de35b47fd4326f4cb::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit73521a7d20234e6de35b47fd4326f4cb::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit73521a7d20234e6de35b47fd4326f4cb::$classMap;
 
         }, null, ClassLoader::class);
     }

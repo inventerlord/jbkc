@@ -73,6 +73,31 @@
                             </ul>
                         </li>
                     @endcan
+                    @can('course_menu')
+                        <li class="@if (Route::is('admin.course.category')) active @endif">
+                            <a href="#">
+                                <i class="fa fa-users"></i>
+                                <span class="nav-label">Courses</span>
+                                <span class="fa arrow"></span>
+                            </a>
+                            <ul class="nav nav-second-level collapse">
+                                @if (Route::has('admin.course'))
+                                    <li class="@if (Route::is('admin.course')) active @endif"><a
+                                            href="{{ route('admin.course') }}">Courses</a>
+                                    </li>
+                                @endif
+                                @can('course_category_menu')
+
+                                    @if (Route::has('admin.course.category'))
+                                        <li class="@if (Route::is('admin.course.category')) active @endif"><a
+                                                href="{{ route('admin.course.category') }}">Category</a>
+                                        </li>
+                                    @endif
+                                @endcan
+
+                            </ul>
+                        </li>
+                    @endcan
 
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span
